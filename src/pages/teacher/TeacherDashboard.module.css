@@ -234,3 +234,45 @@
 .pageNumber {
   @apply text-sm font-medium text-slate-700;
 }
+
+@media (max-width: 768px) {
+  .heroCard,
+  .profileCard,
+  .metricCard {
+    @apply p-4;
+  }
+
+  .heroTitle {
+    @apply text-2xl;
+  }
+
+  .coverGrid {
+    @apply grid-cols-1;
+  }
+
+  .cover {
+    @apply h-32;
+  }
+
+  .tableHeader {
+    @apply px-4 py-3;
+  }
+
+  .filterRow {
+    @apply w-full flex-wrap;
+  }
+
+  .searchInput,
+  .filterSelect {
+    @apply w-full;
+  }
+
+  .table th,
+  .table td {
+    @apply px-4 py-3;
+  }
+
+  .paginationBar {
+    @apply flex-col items-start gap-2 px-4;
+  }
+}

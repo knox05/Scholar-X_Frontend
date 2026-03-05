@@ -119,3 +119,67 @@
   background: linear-gradient(180deg, #a78bfa, #7c3aed);
   border-radius: 9999px;
 }
+
+@media (max-width: 1024px) {
+  .shell {
+    @apply h-auto min-h-screen flex-col overflow-visible;
+  }
+
+  .sidebar {
+    @apply w-full border-r-0 border-b border-violet-200 px-3 py-3;
+  }
+
+  .brandCard {
+    @apply mb-3;
+  }
+
+  .navStack {
+    @apply flex gap-2 space-y-0 overflow-x-auto pb-1;
+  }
+
+  .navStack::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .navItem {
+    @apply shrink-0 whitespace-nowrap;
+  }
+
+  .mainArea {
+    @apply min-h-0;
+  }
+
+  .topbar {
+    @apply flex-col items-start gap-3 px-4 py-3;
+  }
+
+  .topbarActions {
+    @apply w-full flex-wrap justify-end;
+  }
+
+  .searchInput {
+    @apply w-full;
+  }
+
+  .contentPane {
+    @apply p-4;
+  }
+}
+
+@media (max-width: 640px) {
+  .pageTitle {
+    @apply text-xl;
+  }
+
+  .pageSubtitle {
+    @apply text-xs;
+  }
+
+  .profileTrigger span {
+    @apply hidden;
+  }
+
+  .notificationPanel {
+    width: min(90vw, 20rem);
+  }
+}
