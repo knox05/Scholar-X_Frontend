@@ -1,0 +1,99 @@
+.info {
+  @apply mb-4 rounded-xl border border-violet-200 bg-violet-50 px-4 py-3 text-sm text-slate-700;
+}
+
+.error {
+  @apply mb-4 rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700;
+}
+
+.hero {
+  @apply mb-5 grid w-full grid-cols-1 gap-4 rounded-2xl bg-white p-6 shadow-xl shadow-violet-100/40 ring-1 ring-violet-100 xl:grid-cols-[1.15fr_0.85fr];
+  min-height: 220px;
+}
+
+.heroContent {
+  @apply flex flex-col justify-center;
+}
+
+.heroMedia {
+  @apply flex items-center justify-center;
+}
+
+.kicker {
+  @apply text-xs font-semibold uppercase tracking-[0.16em] text-violet-500;
+}
+
+.heroTitle {
+  @apply mt-2 text-3xl font-semibold text-slate-900;
+}
+
+.heroText {
+  @apply mt-2 text-sm text-slate-600;
+}
+
+.heroImage {
+  @apply h-44 w-full rounded-xl object-cover object-center;
+}
+
+.metricGrid {
+  @apply mb-5 grid w-full grid-cols-1 gap-4 md:grid-cols-3;
+}
+
+.metric {
+  @apply rounded-2xl bg-white p-5 shadow-xl shadow-violet-100/40 ring-1 ring-violet-100;
+  min-height: 120px;
+  @apply flex flex-col justify-between;
+}
+
+.metricLabel {
+  @apply text-xs uppercase tracking-wide text-slate-500;
+}
+
+.metricValue {
+  @apply mt-2 text-3xl font-bold text-slate-900;
+}
+
+.tablePanel {
+  @apply rounded-2xl bg-white shadow-xl shadow-violet-100/40 ring-1 ring-violet-100;
+}
+
+.tableWrap {
+  @apply overflow-x-auto;
+}
+
+.table {
+  @apply w-full min-w-[900px] text-left text-sm;
+}
+
+.table thead tr {
+  @apply bg-violet-50;
+}
+
+.table th {
+  @apply px-6 py-4 font-semibold text-slate-700;
+}
+
+.table td {
+  @apply border-t border-violet-100 px-6 py-4 text-slate-700;
+  vertical-align: middle;
+}
+
+.table td:last-child {
+  @apply text-center;
+}
+
+.pill {
+  @apply rounded-full px-3 py-1 text-xs font-semibold;
+}
+
+.active {
+  @apply bg-emerald-100 text-emerald-700;
+}
+
+.warning {
+  @apply bg-amber-100 text-amber-700;
+}
+
+.empty {
+  @apply py-8 text-center text-slate-500;
+}

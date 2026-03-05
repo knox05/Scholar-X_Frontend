@@ -1,0 +1,55 @@
+.layoutGrid {
+  @apply grid w-full grid-cols-1 gap-5 xl:grid-cols-[1fr_1.2fr];
+}
+
+.hero {
+  @apply rounded-2xl bg-white p-6 shadow-xl shadow-violet-100/40 ring-1 ring-violet-100;
+}
+
+.kicker {
+  @apply text-xs font-semibold uppercase tracking-[0.16em] text-violet-500;
+}
+
+.title {
+  @apply mt-2 text-2xl font-semibold text-slate-900;
+}
+
+.subtitle {
+  @apply mt-2 text-sm text-slate-600;
+}
+
+.heroImage {
+  @apply mt-4 h-56 w-full rounded-xl object-cover;
+}
+
+.formPanel {
+  @apply rounded-2xl bg-white p-6 shadow-xl shadow-violet-100/40 ring-1 ring-violet-100;
+}
+
+.info {
+  @apply mb-3 rounded-xl border border-violet-200 bg-violet-50 px-4 py-2.5 text-sm text-slate-700;
+}
+
+.error {
+  @apply mb-3 rounded-xl border border-red-200 bg-red-50 px-4 py-2.5 text-sm text-red-700;
+}
+
+.success {
+  @apply mb-3 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-2.5 text-sm text-emerald-700;
+}
+
+.label {
+  @apply mb-1 mt-3 block text-xs font-semibold uppercase tracking-wide text-slate-600;
+}
+
+.input {
+  @apply w-full rounded-xl border border-violet-200 bg-violet-50/60 px-4 py-2.5 text-sm outline-none transition-all duration-300 focus:border-violet-500 focus:ring-2 focus:ring-violet-200;
+}
+
+.textarea {
+  @apply w-full rounded-xl border border-violet-200 bg-violet-50/60 px-4 py-2.5 text-sm outline-none transition-all duration-300 focus:border-violet-500 focus:ring-2 focus:ring-violet-200;
+}
+
+.submitBtn {
+  @apply mt-5 rounded-xl bg-gradient-to-r from-[#A78BFA] to-[#7C3AED] px-6 py-2.5 text-sm font-semibold text-white shadow-lg shadow-violet-200 transition-all duration-300 hover:-translate-y-0.5 disabled:opacity-60;
+}

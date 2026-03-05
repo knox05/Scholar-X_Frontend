@@ -1,0 +1,121 @@
+.shell {
+  @apply flex h-screen w-full overflow-hidden bg-[#F8F8FC] text-slate-800;
+}
+
+.sidebar {
+  @apply w-[280px] shrink-0 border-r border-violet-200/80 bg-white px-4 py-5 shadow-xl shadow-violet-100/40;
+}
+
+.brandCard {
+  @apply mb-6 flex items-center gap-3 rounded-2xl border border-violet-100 bg-violet-50/60 p-3;
+}
+
+.brandAvatar {
+  @apply h-12 w-12 rounded-xl object-cover;
+}
+
+.brandKicker {
+  @apply text-[10px] font-semibold uppercase tracking-[0.16em] text-violet-500;
+}
+
+.brandName {
+  @apply text-sm font-semibold text-slate-700;
+}
+
+.navStack {
+  @apply space-y-2;
+}
+
+.navItem {
+  @apply block rounded-xl bg-violet-50/70 px-4 py-3 text-sm font-medium text-slate-700 transition-all duration-300 hover:-translate-y-0.5 hover:bg-violet-100;
+}
+
+.navItemActive {
+  @apply bg-gradient-to-r from-[#A78BFA] to-[#7C3AED] text-white shadow-lg shadow-violet-200;
+}
+
+.mainArea {
+  @apply flex min-h-screen flex-1 flex-col overflow-hidden;
+}
+
+.topbar {
+  @apply sticky top-0 z-20 flex items-center justify-between border-b border-violet-200/70 bg-white/80 px-7 py-4 backdrop-blur-md;
+}
+
+.pageTitle {
+  @apply text-2xl font-semibold text-slate-900;
+}
+
+.pageSubtitle {
+  @apply text-sm text-slate-600;
+}
+
+.topbarActions {
+  @apply flex items-center gap-3;
+}
+
+.searchInput {
+  @apply w-72 rounded-xl border border-violet-200 bg-violet-50/60 px-4 py-2.5 text-sm outline-none transition-all duration-300 focus:border-violet-500 focus:ring-2 focus:ring-violet-200;
+}
+
+.bellButton {
+  @apply relative rounded-xl border border-violet-200 bg-white px-3 py-2 text-lg text-violet-700 transition-all duration-300 hover:bg-violet-50;
+}
+
+.bellDot {
+  @apply absolute right-1.5 top-1.5 h-2.5 w-2.5 rounded-full bg-red-500;
+}
+
+.notificationWrap {
+  @apply relative;
+}
+
+.notificationPanel {
+  @apply absolute right-0 top-12 w-72 rounded-2xl border border-violet-100 bg-white p-4 text-sm shadow-xl shadow-violet-100/60;
+}
+
+.notificationTitle {
+  @apply mb-2 text-xs font-semibold uppercase tracking-[0.14em] text-slate-500;
+}
+
+.notificationItem {
+  @apply rounded-xl border border-violet-50 bg-violet-50/60 px-3 py-2 text-slate-700;
+}
+
+.notificationItem + .notificationItem {
+  @apply mt-2;
+}
+
+.notificationEmpty {
+  @apply text-slate-500;
+}
+
+.profileTrigger {
+  @apply flex items-center gap-2 rounded-xl border border-violet-200 bg-white px-3 py-2 text-sm font-medium text-slate-700 transition-all duration-300 hover:bg-violet-50;
+}
+
+.profileImage {
+  @apply h-7 w-7 rounded-lg object-cover;
+}
+
+.logoutButton {
+  @apply rounded-xl border border-violet-200 bg-violet-50 px-3 py-2 text-sm font-medium text-violet-700 transition-all duration-300 hover:bg-violet-100;
+}
+
+.contentPane {
+  @apply flex-1 overflow-y-auto p-6;
+}
+
+.contentPane::-webkit-scrollbar {
+  width: 10px;
+}
+
+.contentPane::-webkit-scrollbar-track {
+  background: #efebff;
+  border-radius: 9999px;
+}
+
+.contentPane::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #a78bfa, #7c3aed);
+  border-radius: 9999px;
+}
